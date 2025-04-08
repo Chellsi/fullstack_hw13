@@ -1,0 +1,39 @@
+.square {
+    stroke-width: 5;
+    stroke: black;
+    fill: red;
+}
+
+.rectangle {
+    stroke-width: 5;
+    stroke: blueviolet;
+    fill: green;
+}
+
+.circle {
+    stroke-width: 5;
+    stroke: palevioletred;
+    fill: blue;
+    animation: breath 3s ease-in-out infinite alternate;
+}
+
+.ellipse {
+    stroke-width: 5;
+    stroke: goldenrod;
+    fill: yellow;
+}
+
+@keyframes breath {
+    0% {
+        stroke: blue;
+        fill: transparent;
+    }
+    50% {
+        stroke: #40a070;
+        fill: #e0f0ff;
+    }
+    100% {
+        stroke: seagreen;
+        fill: lightblue;
+    }
+}
